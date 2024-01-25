@@ -1,6 +1,7 @@
 package com.example.video_player
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.exoplayer2.MediaItem
@@ -31,6 +32,7 @@ class MainActivity : AppCompatActivity() {
         exoPlayer.playWhenReady = true
         val playerView = findViewById<PlayerView>(R.id.exoPlayerView)
         playerView.player = exoPlayer
+        Log.i("Main Activity","Message")
 
     }
 
